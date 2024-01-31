@@ -1,5 +1,29 @@
+
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: black;
-    color: whitesmoke;
+    background-color: #101010;
+    color: #A9A9A9;
 }
+
+.menu {
+    text-align: center;
+}
+
+.main {
+    background-color: #202020;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 30px;
+    
+}
+
+.number{
+    list-style: none;
+    padding-left: 0;   
+    line-height: 2em;
+    align-self: center;
+}
+

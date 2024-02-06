@@ -79,3 +79,7 @@ function average(){
         document.getElementById("res_average").textContent = "Invalid number";
     }
 }
+
+function btt_clear(){
+    clear();
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 01</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="menu">
@@ -16,36 +17,63 @@
     <div class="main">
         <div class="expressions">        
             <h3>Addition</h3>
-            <ul>
-                <li class="number"><input type="number" placeholder="First number"></li>
-                <li class="number"><input type="number" placeholder="Second number"></li>
-            </ul>      
-            <button class="button">Result</button>
+            <div class="number">
+                <input class="input_style" id="num1" type="number" placeholder="First number">
+                <input class="input_style" id="num2" type="number" placeholder="Second number">
+            </div>
+            <div class="result">
+                <button onclick="add()" class="button">Result</button>
+                <p><span id="res_add"></span></p>
+            </div>      
         </div>
         <div class="expressions">        
             <h3>Subtraction</h3>
-            <ul>
-                <li class="number"><input type="number" placeholder="First number"></li>
-                <li class="number"><input type="number" placeholder="Second number"></li>
-            </ul>
-            <button class="button">Result</button>
+            <div class="number">
+                <input class="input_style" id="num3" type="number" placeholder="First number">
+                <input class="input_style" id="num4" type="number" placeholder="Second number">
+            </div>
+            <div class="result">
+                <button onclick="sub()" class="button">Result</button>
+                <p><span id="res_sub"></span></p>
+            </div>
         </div>
         <div class="expressions">        
             <h3>Multiplication</h3>
-            <ul>
-                <li class="number"><input type="number" placeholder="First number"></li>
-                <li class="number"><input type="number" placeholder="Second number"></li>
-            </ul>
-            <button class="button">Result</button>
+            <div class="number">
+                <input class="input_style" id="num5" type="number" placeholder="First number">
+                <input class="input_style" id="num6" type="number" placeholder="Second number">
+            </div>
+            <div class="result">
+                <button onclick="mult()" class="button">Result</button>
+                <p><span id="res_mult"></span></p>
+            </div>
         </div>
         <div class="expressions">        
             <h3>Division</h3>
-            <ul>
-                <li class="number"><input type="number" placeholder="First number"></li>
-                <li class="number"><input type="number" placeholder="Second number"></li>
-            </ul>
-            <button class="button">Result</button>
+            <div class="number">
+                <input class="input_style" id="num7" type="number" placeholder="First number">
+                <input class="input_style" id="num8" type="number" placeholder="Second number">
+            </div>
+            <div class="result">
+                <button onclick="division()" class="button">Result</button>
+                <p><span id="res_division"></span></p>
+            </div>
         </div>
+        <div class="expressions">        
+            <h3>Average</h3>
+            <div class="number">
+                <input class="input_style" id="num9" type="number" placeholder="First number">
+                <input class="input_style" id="num10" type="number" placeholder="Second number">
+                <input class="input_style" id="num11" type="number" placeholder="Third number">
+            </div>
+            <div class="result">
+                <button onclick="average()" class="button">Result</button>
+                <p><span id="res_average"></span></p>
+            </div>
+        </div>
+    </div>    
+    <div class="buttons">
+        <button onclick="clear()" class="button">Clear</button>
     </div>
 </body>
 </html>

@@ -1,5 +1,4 @@
 function clear(){
-    console.log("oi");
     document.getElementById("num1").value = null;
     document.getElementById("num2").value = null;
     document.getElementById("num3").value = null;
@@ -16,6 +15,7 @@ function clear(){
     document.getElementById("res_mult").textContent = "";
     document.getElementById("res_division").textContent = "";
     document.getElementById("res_average").textContent = "";
+    document.getElementById("res_approval").textContent = "";
 }
 
 function add(){    
@@ -70,9 +70,19 @@ function average(){
     var num9 = document.getElementById("num9").valueAsNumber;
     var num10 = document.getElementById("num10").valueAsNumber;
     var num11 = document.getElementById("num11").valueAsNumber;
+    var show_res_average = document.getElementById("res_average");
+    var res_approval = document.getElementById("res_approval");
     if(!isNaN(num9) && !isNaN(num10) && !isNaN(num11)){
         var res_average = (num9 + num10 + num11) / 3;
-        document.getElementById("res_average").textContent = res_average.toFixed(2);
+        if(res_average >= 7){
+            show_res_average.textContent = res_average.toFixed(2);
+            res_approval.textContent = "Approved";
+            res_approval.style.color= "#708dce";
+        }else{
+            show_res_average.textContent = res_average.toFixed(2);
+            res_approval.textContent = "Failed";
+            res_approval.style.color= "#ce7070";
+        }
     }
     else{
         clear();
@@ -82,4 +92,8 @@ function average(){
 
 function btt_clear(){
     clear();
+}
+
+function change_page(){
+    window.location.href = 'http://127.0.0.1:5500/ativ01/page.html'
 }

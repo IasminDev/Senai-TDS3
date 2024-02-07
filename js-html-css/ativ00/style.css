@@ -38,7 +38,7 @@ h1{
 }
 
 .expressions{
-    height: 210px;
+    height: 220px;
     width: 150px;
     text-align: center;
     align-items: center;
@@ -85,7 +85,7 @@ h1{
 .result{          
     text-align: center;
     line-height: 2em;
-    padding-top: 1.5em;
+    padding-top: 0.8em;
 }
 
 .buttons{
@@ -94,4 +94,5 @@ h1{
     flex-wrap: wrap;
     justify-content: center;    
     align-items: center;
+    gap: 2em;
 }

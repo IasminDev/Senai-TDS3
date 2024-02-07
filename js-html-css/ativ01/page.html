@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="#p1">Profile 01</a>
+            </li>
+            <li>
+                <a href="#p2">Profile 02</a>
+            </li>
+            <li>
+                <a href="#tec">Tec</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <div id="p1" class="profile_01">
+        <div class="profile_photo">
+            <img class="photo" src="https://avatars.githubusercontent.com/u/132717019?v=4" alt="picture_profile">
+        </div>
+        <div class="description">
+            <h3>Iasmin - Desenvolvimento de Sistemas</h3>
+            <p>Primeira atividade avaliativa da aula de TDS 3</p>
+        </div>
+    </div>
+    <div id="p2" class="profile_02">
+        <div class="profile_photo">
+            <img class="photo" src="https://avatars.githubusercontent.com/u/132717019?v=4" alt="picture_profile">
+        </div>
+        <div class="description">
+            <h3>Iasmin - Desenvolvimento de Sistemas</h3>
+            <p>Primeira atividade avaliativa da aula de TDS 3</p>
+        </div>
+    </div>
+    <div id="tec" class="tec">
+        <div class="html_desc">
+            <div class="img_html">
+                <img onclick="html_description()" class="tec_photo" src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-1.png" alt="html">
+            </div>            
+            <div class="tec_description">
+                <p><span id="html_desc"></span></p>                
+            </div>
+        </div>
+        <div class="css_desc">
+            <div class="img_html">
+                <img onclick="css_description()"  class="tec_photo" src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-2.png" alt="css">
+            </div>
+            <div class="tec_description">
+                <p><span id="css_desc"></span></p>
+            </div>
+        </div>
+        <div class="js_desc">
+            <div class="img_html">
+                <img onclick="js_description()" class="tec_photo" src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-3.png" alt="js">
+            </div>
+            <div class="tec_description">
+                <p><span id="js_desc"></span></p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+
+    </div>
+    <div class="buttons">
+        <button onclick="change_page()" class="button">Activity 00</button>
+    </div>
+</body>
+</html>

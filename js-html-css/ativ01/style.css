@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{    
+    font-family: 'Times New Roman', Times, serif;
+    color: #A9A9A9;
+    background-color: #101010;
+}
+
+header{
+    background-color: #202020;
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0.4em;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    color: #A9A9A9;
+    opacity: 0.5;
+    transition: all 200ms linear;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 1;
+    transition: all 200ms linear;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile_01{
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile_photo{
+    border-radius: 460px;
+    max-height: 125px;
+    max-width: 125px;
+}
+.photo{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 460px;
+    max-width: 100%;
+    max-height: 125px;
+    -moz-transition: all 0.5s;
+}
+
+.photo:hover{
+    -moz-transform: scale(1.2);
+}
+
+.profile_01 .description{
+    margin-left: 50px;
+}
+
+.profile_02{
+    height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile_02 .description{
+    margin-right: 50px;
+}
+
+.tec{
+    height: 400px;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.html_desc{
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.css_desc{
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.js_desc{
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.tec_photo{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-height: 100px;
+}
+
+.tec .tec_description{
+    padding: 1.5em;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.contact{
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: center;
+    padding: 2em;
+}
+
+.button{
+    border: none;
+    color:#101010;
+    background-color: #c2c1c1;    
+    padding: 5px 15px;
+    border-radius: 30px;
+    opacity: 0.8;
+}
+
+.button:hover{
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+}
+

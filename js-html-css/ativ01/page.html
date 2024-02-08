@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <title>Atividade 01</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
@@ -29,8 +32,8 @@
             <img class="photo" src="https://avatars.githubusercontent.com/u/132717019?v=4" alt="picture_profile">
         </div>
         <div class="description">
-            <h3>Iasmin - Desenvolvimento de Sistemas</h3>
-            <p>Primeira atividade avaliativa da aula de TDS 3</p>
+            <h3>Iasmin</h3>
+            <p>Born on April 10, 2002, she is currently 21 years old. She is currently enrolled in the Systems Development Technician course at Senai, in the third and final module of the program. She works in the technology field and intends to continue working in this area while further deepening her knowledge. She has taken other courses in both marketing and systems development and analysis, possessing basic knowledge of both front and back end, although still somewhat superficial. Her hobbies include reading, listening to music, and studying.</p>
         </div>
     </div>
     <div id="p2" class="profile_02">
@@ -38,13 +41,13 @@
             <img class="photo" src="https://avatars.githubusercontent.com/u/132717019?v=4" alt="picture_profile">
         </div>
         <div class="description">
-            <h3>Iasmin - Desenvolvimento de Sistemas</h3>
-            <p>Primeira atividade avaliativa da aula de TDS 3</p>
+            <h3>Iasmin</h3>
+            <p>Born on April 10, 2002, she is currently 21 years old. She is currently enrolled in the Systems Development Technician course at Senai, in the third and final module of the program. She works in the technology field and intends to continue working in this area while further deepening her knowledge. She has taken other courses in both marketing and systems development and analysis, possessing basic knowledge of both front and back end, although still somewhat superficial. Her hobbies include reading, listening to music, and studying.</p>
         </div>
     </div>
     <div id="tec" class="tec">
         <div class="html_desc">
-            <div class="img_html">
+            <div class="img_tec">
                 <img onclick="html_description()" class="tec_photo" src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-1.png" alt="html">
             </div>            
             <div class="tec_description">
@@ -52,7 +55,7 @@
             </div>
         </div>
         <div class="css_desc">
-            <div class="img_html">
+            <div class="img_tec">
                 <img onclick="css_description()"  class="tec_photo" src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-2.png" alt="css">
             </div>
             <div class="tec_description">
@@ -60,7 +63,7 @@
             </div>
         </div>
         <div class="js_desc">
-            <div class="img_html">
+            <div class="img_tec">
                 <img onclick="js_description()" class="tec_photo" src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-3.png" alt="js">
             </div>
             <div class="tec_description">
@@ -69,10 +72,43 @@
         </div>
     </div>
     <div id="contact" class="contact">
-
-    </div>
-    <div class="buttons">
-        <button onclick="change_page()" class="button">Activity 00</button>
+        <div class="inf">
+            <div>
+                <h3>Contact</h3>
+                <p>Send a menssage for our team</p>
+            </div>
+            <div class="inputs">
+                <div>
+                    <input type="text" id="name" class="input_style" placeholder="Name *">
+                </div>
+                <div>
+                    <input type="text" id="email" class="input_style"  placeholder="Email">
+                </div>
+                <div>
+                    <textarea type="text" id="message" class="input_style"  placeholder="Message *"></textarea>
+                </div>   
+            </div>                         
+            <div>
+                <p><span id="miss_inf"></span></p> 
+            </div>
+            <div class="contact_button">
+                <button onclick="check_data()" class="button">Check data</button>
+            </div>
+        </div>
+        <div class="msg">
+            <div>
+                <h3>Check data</h3>
+                <p>Is everything correct?</p>
+            </div>
+            <div>
+                <p>Name: <span id="check_name"></span></p>
+                <p>Email: <span id="check_email"></span></p>
+                <p>Message: <span id="check_message"></span></p>
+            </div>
+            <div class="contact_button">
+                <button onclick="send()" class="button">Send</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

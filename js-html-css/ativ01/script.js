@@ -1,9 +1,43 @@
+var global_name;
+var global_email;
+var global_message;
+
+function check_data(){
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    if(name != "" && message != ""){
+        document.getElementById("miss_inf").textContent = "";
+        global_name = name;
+        global_email = email;
+        global_message = message;
+
+        document.getElementById("check_name").textContent = global_name;
+        document.getElementById("check_email").textContent = global_email;
+        document.getElementById("check_message").textContent = global_message;
+    }else{
+        document.getElementById("check_name").textContent = "";
+        document.getElementById("check_email").textContent = "";
+        document.getElementById("check_message").textContent = "";
+        document.getElementById("miss_inf").textContent = "Missing information";
+    }
+}
+
+function send(){
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+    var phone = "5541999999999";
+    var link = "https://wa.me/" + phone + "?text=Name: " + global_name + "Email: " + global_email + "\n" + global_message;
+    window.open(link, "_blank");
+}
+
 function html_description(){
     var html_desc = document.getElementById("html_desc");
     var css_desc = document.getElementById("css_desc");
     var js_desc = document.getElementById("js_desc");
     if(html_desc.textContent == ""){
-        html_desc.textContent = "HTML (Linguagem de Marcação de Hipertexto) é o código que você usa para estruturar uma página web e seu conteúdo.";
+        html_desc.textContent = "HTML (Hypertext Markup Language) is the code you use to structure a web page and its content.";
         css_desc.textContent = ""; 
         js_desc.textContent = "";
     }else{
@@ -16,7 +50,7 @@ function css_description(){
     var js_desc = document.getElementById("js_desc");
     if(css_desc.textContent == ""){
         html_desc.textContent = "";
-        css_desc.textContent = "CSS (Folha de Estilo em Cascata) é o código que você usa para dar estilo à sua página Web.";
+        css_desc.textContent = "CSS (Cascading Style Sheets) is the code you use to style your web page.";
         js_desc.textContent = "";
     }
     else{
@@ -31,7 +65,7 @@ function js_description(){
     if(js_desc.textContent == ""){
         html_desc.textContent = "";
         css_desc.textContent = "";
-        js_desc.textContent = "JavaScript é uma linguagem de script orientada a objetos e plataforma cruzada usada para tornar as páginas da Web interativas.";
+        js_desc.textContent = "JavaScript is an object-oriented scripting language used to make web pages interactive.";
     }
     else{
         clear();

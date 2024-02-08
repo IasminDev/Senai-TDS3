@@ -8,18 +8,19 @@ html{
 }
 
 body{    
-    font-family: 'Times New Roman', Times, serif;
-    color: #A9A9A9;
-    background-color: #101010;
+    font-family: 'Roboto', sans-serif;
+    color: #DDE6ED;
+    background-color: #27374D;
 }
 
 header{
-    background-color: #202020;
+    background-color: #9DB2BF;
     height: 30px;
     width: 100%;
     position: fixed;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 999;
 }
 
 ul{
@@ -39,7 +40,7 @@ li{
 }
 
 a{
-    color: #A9A9A9;
+    color: #071952;
     opacity: 0.5;
     transition: all 200ms linear;
     text-decoration: none;
@@ -48,62 +49,108 @@ a{
 a:hover{
     opacity: 1;
     transition: all 200ms linear;
-    text-decoration: underline;
+    text-decoration: solid;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .profile_01{
-    height: 300px;
-    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.profile_photo{
-    border-radius: 460px;
-    max-height: 125px;
-    max-width: 125px;
-}
-.photo{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 460px;
-    max-width: 100%;
-    max-height: 125px;
-    -moz-transition: all 0.5s;
-}
-
-.photo:hover{
-    -moz-transform: scale(1.2);
-}
-
-.profile_01 .description{
-    margin-left: 50px;
+    width: 100%;
+    height:auto;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #526D82;     
 }
 
 .profile_02{
-    height: 300px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    height: auto;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 70px;
 }
 
-.profile_02 .description{
-    margin-right: 50px;
+.profile_photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border-radius: 100%;
+    max-height: 200px;
+    max-width: auto;
+}
+
+.photo{
+    border-radius: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.photo:hover{
+    transform: scale(1.2);
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    width: 600px;
+    padding: 50px;
+    line-height: 1.5em;
 }
 
 .tec{
-    height: 400px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
     padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #526D82; 
+}
+
+.img_tec{
+    max-height: 150px;
+    max-width: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.tec_photo{
+    max-width: 100%;
+    max-height: 150px;
+    transition: all 0.5s;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.tec_photo:hover{
+    transform: scale(1.2);
+
+}
+
+.tec_description{
+    padding: 1.5em;
+    height: 100px;
+    align-items: center;
+    text-align: center;
 }
 
 .html_desc{
@@ -127,45 +174,79 @@ a:hover{
     padding: 1em;
 }
 
-.tec_photo{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    max-height: 100px;
-}
-
-.tec .tec_description{
-    padding: 1.5em;
-    height: 100px;
-    align-items: center;
-    text-align: center;
-}
-
 .contact{
-    height: 200px;
-    flex-wrap: wrap;
-}
-
-
-.buttons{
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;    
     align-items: center;
-    padding: 2em;
+    justify-content: center; 
+    padding: 5%;
+    gap: 10%;
+    line-height: 150%;
+}
+
+.inf{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.inputs{
+    line-height: 35px;
+}
+
+.input_style{
+    border-radius: 10px;
+    border: none;
+    padding: 4px;
+    background-color: #DDE6ED;
+}
+
+.input_style:focus{
+    outline: 0;
+}
+
+.msg{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+#message{
+    max-width: 270px;
+    min-width: 270px;
+}
+
+.contact_button{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    justify-content: center;    
+    align-self: center;
 }
 
 .button{
     border: none;
-    color:#101010;
-    background-color: #c2c1c1;    
+    color:#071952;
+    background-color: #DDE6ED;    
     padding: 5px 15px;
     border-radius: 30px;
     opacity: 0.8;
+    transition: all 0.5s;
 }
 
 .button:hover{
     cursor: pointer;
     opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+    transition: scale(1.1);
 }
 
+/* @media only screen and (max-width: 600px){
+} */

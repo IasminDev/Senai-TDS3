@@ -11,11 +11,14 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #DDE6ED;
     background-color: #27374D;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 header{
     background-color: #9DB2BF;
-    height: 30px;
+    height: auto;
+    padding: 5px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -103,15 +106,26 @@ a:hover{
     transform: scale(1.2);
 }
 
+.profile_info{
+    display: flex;
+    position: relative;
+    height: auto;
+    max-width: 40em;
+}
+
 .description{
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: auto;
-    width: 600px;
     padding: 50px;
+    margin: 25px;
+    gap: 10px;
     line-height: 1.5em;
+    border-radius:10px;
+    min-width: 15%; 
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 }
 
 .tec{
@@ -136,9 +150,10 @@ a:hover{
 
 .tec_photo{
     max-width: 100%;
-    max-height: 150px;
+    max-height: 125px;
     transition: all 0.5s;
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .tec_photo:hover{
@@ -210,8 +225,17 @@ a:hover{
     outline: 0;
 }
 
+textarea#message{
+    resize: vertical;
+    overflow: hidden;
+    height: auto;
+    line-height: 1.5;
+    max-width: 270px;
+    min-width: 270px;
+}
+
 .msg{
-    width: 350px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -219,9 +243,8 @@ a:hover{
     flex-wrap: wrap;
 }
 
-#message{
-    max-width: 270px;
-    min-width: 270px;
+.check_message{
+    width: max-content;
 }
 
 .contact_button{
@@ -248,5 +271,7 @@ a:hover{
     transition: scale(1.1);
 }
 
-/* @media only screen and (max-width: 600px){
-} */
+/* @media only screen and (max-width: 600px){}
+
+    @media(width <=768px)
+*/

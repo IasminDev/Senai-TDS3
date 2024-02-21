@@ -31,24 +31,28 @@
         <div class="profile_photo">
             <img class="photo" src="https://avatars.githubusercontent.com/u/132717019?v=4" alt="picture_profile">
         </div>
-        <div class="description">
-            <h3>Iasmin</h3>
-            <p>Born on April 10, 2002, she is currently 21 years old. She is currently enrolled in the Systems Development Technician course at Senai, in the third and final module of the program. She works in the technology field and intends to continue working in this area while further deepening her knowledge. She has taken other courses in both marketing and systems development and analysis, possessing basic knowledge of both front and back end, although still somewhat superficial. Her hobbies include reading, listening to music, and studying.</p>
+        <div class="profile_info">
+            <div class="description">
+                <h3>Iasmin</h3>
+                <p>Born on April 10, 2002, she is currently 21 years old. She is currently enrolled in the Systems Development Technician course at Senai, in the third and final module of the program. She works in the technology field and intends to continue working in this area while further deepening her knowledge. She has taken other courses in both marketing and systems development and analysis, possessing basic knowledge of both front and back end, although still somewhat superficial. Her hobbies include reading, listening to music, and studying.</p>
+            </div>
         </div>
     </div>
     <div id="p2" class="profile_02">
         <div class="profile_photo">
             <img class="photo" src="https://avatars.githubusercontent.com/u/132717019?v=4" alt="picture_profile">
         </div>
-        <div class="description">
-            <h3>Iasmin</h3>
-            <p>Born on April 10, 2002, she is currently 21 years old. She is currently enrolled in the Systems Development Technician course at Senai, in the third and final module of the program. She works in the technology field and intends to continue working in this area while further deepening her knowledge. She has taken other courses in both marketing and systems development and analysis, possessing basic knowledge of both front and back end, although still somewhat superficial. Her hobbies include reading, listening to music, and studying.</p>
+        <div class="profile_info">
+            <div class="description">
+                <h3>Iasmin</h3>
+                <p>Born on April 10, 2002, she is currently 21 years old. She is currently enrolled in the Systems Development Technician course at Senai, in the third and final module of the program. She works in the technology field and intends to continue working in this area while further deepening her knowledge. She has taken other courses in both marketing and systems development and analysis, possessing basic knowledge of both front and back end, although still somewhat superficial. Her hobbies include reading, listening to music, and studying.</p>
+            </div>
         </div>
     </div>
     <div id="tec" class="tec">
         <div class="html_desc">
             <div class="img_tec">
-                <img onclick="html_description()" class="tec_photo" src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-1.png" alt="html">
+                <img onclick="html_description()" class="tec_photo" src="./img/HTML.png" alt="HTML">
             </div>            
             <div class="tec_description">
                 <p><span id="html_desc"></span></p>                
@@ -56,7 +60,7 @@
         </div>
         <div class="css_desc">
             <div class="img_tec">
-                <img onclick="css_description()"  class="tec_photo" src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-2.png" alt="css">
+                <img onclick="css_description()"  class="tec_photo" src="./img/CSS.png" alt="CSS">
             </div>
             <div class="tec_description">
                 <p><span id="css_desc"></span></p>
@@ -64,7 +68,7 @@
         </div>
         <div class="js_desc">
             <div class="img_tec">
-                <img onclick="js_description()" class="tec_photo" src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-3.png" alt="js">
+                <img onclick="js_description()" class="tec_photo" src="./img/JS.png" alt="JS">
             </div>
             <div class="tec_description">
                 <p><span id="js_desc"></span></p>
@@ -85,7 +89,7 @@
                     <input type="text" id="email" class="input_style"  placeholder="Email">
                 </div>
                 <div>
-                    <textarea type="text" id="message" class="input_style"  placeholder="Message *"></textarea>
+                    <textarea type="text" id="message" class="input_style"  placeholder="Message *" oninput="grow(this)"></textarea>
                 </div>   
             </div>                         
             <div>
@@ -103,7 +107,10 @@
             <div>
                 <p>Name: <span id="check_name"></span></p>
                 <p>Email: <span id="check_email"></span></p>
-                <p>Message: <span id="check_message"></span></p>
+                <p>Message: <span class="check_message" id="check_message"></span></p>                
+            </div>
+            <div>
+                <p><span id="miss_check"></span></p> 
             </div>
             <div class="contact_button">
                 <button onclick="send()" class="button">Send</button>

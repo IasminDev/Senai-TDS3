@@ -1,6 +1,6 @@
-var global_name;
-var global_email;
-var global_message;
+var global_name = "";
+var global_email = "";
+var global_message = "";
 
 function check_data(){
     var name = document.getElementById("name").value;
@@ -15,21 +15,33 @@ function check_data(){
         document.getElementById("check_name").textContent = global_name;
         document.getElementById("check_email").textContent = global_email;
         document.getElementById("check_message").textContent = global_message;
+        document.getElementById("miss_check").textContent = "";
     }else{
         document.getElementById("check_name").textContent = "";
         document.getElementById("check_email").textContent = "";
         document.getElementById("check_message").textContent = "";
+        global_name = "";
+        global_email = "";
+        global_message = "";
+        document.getElementById("miss_check").textContent = "";
         document.getElementById("miss_inf").textContent = "Missing information";
     }
 }
 
 function send(){
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
-    var phone = "5541999999999";
-    var link = "https://wa.me/" + phone + "?text=Name: " + global_name + "Email: " + global_email + "\n" + global_message;
-    window.open(link, "_blank");
+    if(global_name != "" && global_message != ""){
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        var phone = "5541999999999";
+        var link = "https://wa.me/" + phone + "?text=Name: " + global_name + '<br>' +"Email: " + global_email + '<br>' + global_message;
+        window.open(link, "_blank");
+    }else{
+        document.getElementById("check_name").textContent = "";
+        document.getElementById("check_email").textContent = "";
+        document.getElementById("check_message").textContent = "";
+        document.getElementById("miss_check").textContent = "Missing information";
+    }
 }
 
 function html_description(){
@@ -79,4 +91,8 @@ function clear(){
 }
 function change_page(){
     window.location.href = 'http://127.0.0.1:5500/ativ00/page.html';
+}
+function grow(element){
+    element.style.height = "10px";
+    element.style.height = (element.scrollHeight)+"px";
 }

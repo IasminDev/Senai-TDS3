@@ -7,8 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
     <link rel="icon" href="../assets/img/order.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="group">
+      <img class="arrow-left" onclick="window.location.href='../menu/page.html'" src="../assets/arrow-left.png" alt="arrow-bar-left">
+      <h1>Order</h1>
+      <img class="arrow-right" onclick="window.location.href='../main/page.html'" src="../assets/arrow-right.png" alt="arrow-bar-right">
+    </div>    
+
+    <div>
+      <div class="mb-3">
+        <input type="name" class="form-control" id="name" placeholder="Your name">
+      </div>
+    </div>
+    <button onclick="conn()" type="button" class="btn btn-outline-light">Start</button>
+    <div id="err">
+      <h2>Insert your name.</h2>
+    </div>
+    <div id="selects-div">
+      <div class="head-select">
+        <h2>Hey <span id="print-name"></span>, let's start your order.</h2>
+        <h3>Choose your meal</h3>
+      </div>
+      <div class="selects">
+        <div>
+          <h5>Classics</h5>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select</option>
+            <option value="1">Avocado Toast</option>
+            <option value="2">Sandwich</option>
+            <option value="3">Egg Toast</option>
+          </select>      
+        </div>
+        <div>
+          <h5>Drinks</h5>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select</option>
+            <option value="1">Tea</option>
+            <option value="2">Latte</option>
+            <option value="3">Iced Coffee</option>
+          </select>      
+        </div>
+        <div>
+          <h5>Dessests</h5>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select</option>
+            <option value="1">Pancake</option>
+            <option value="2">Vegan Yogurt</option>
+            <option value="3">Chocolate Cheesecake</option>
+          </select>      
+        </div>
+      </div>    
+      <div class="btn-selects">
+        <button onclick="finish()" type="button" class="btn btn-outline-success">Make Order</button>
+        <button onclick="clear()" type="button" class="btn btn-outline-warning">Clear</button>
+      </div>  
+    </div>
 </body>
 </html>

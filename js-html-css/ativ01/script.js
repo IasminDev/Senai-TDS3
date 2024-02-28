@@ -89,9 +89,6 @@ function clear(){
     document.getElementById("css_desc").textContent = "";
     document.getElementById("js_desc").textContent = "";
 }
-function change_page(){
-    window.location.href = 'http://127.0.0.1:5500/ativ00/page.html';
-}
 function grow(element){
     element.style.height = "10px";
     element.style.height = (element.scrollHeight)+"px";

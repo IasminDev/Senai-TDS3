@@ -18,7 +18,7 @@ body{
 header{
     background-color: #9DB2BF;
     height: auto;
-    padding: 5px;
+    padding: 0.5em;
     width: 100%;
     position: fixed;
     top: 0;
@@ -27,9 +27,10 @@ header{
 }
 
 ul{
+    width: 98%;
     list-style: none;
     display: flex;
-    gap: 2em;
+    gap: 1.5em;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
@@ -67,8 +68,7 @@ a:hover{
     height:auto;
     gap: 50px;
     padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #526D82;     
+    padding-bottom: 100px;   
 }
 
 .profile_02{
@@ -81,6 +81,20 @@ a:hover{
     gap: 50px;
     padding-top: 100px;
     padding-bottom: 70px;
+    background-color: #526D82;  
+}
+
+.profile_03{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height:auto;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .profile_photo{
@@ -130,8 +144,6 @@ a:hover{
 
 .tec{
     height: auto;
-    padding-top: 100px;
-    padding-bottom: 30px;
     padding: 1em;
     display: flex;
     flex-direction: row;
@@ -144,7 +156,7 @@ a:hover{
 .img_tec{
     max-height: 150px;
     max-width: auto;
-    padding-top: 30px;
+    padding-top: 70px;
     padding-bottom: 30px;
 }
 

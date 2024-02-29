@@ -12,58 +12,82 @@
 </head>
 <body>
     <div class="group">
-      <img class="arrow-left" onclick="window.location.href='../menu/page.html'" src="../assets/arrow-left.png" alt="arrow-bar-left">
+      <img class="arrow_left" onclick="window.location.href='../menu/page.html'" src="../assets/arrow-left.png" alt="arrow-bar-left">
       <h1>Order</h1>
-      <img class="arrow-right" onclick="window.location.href='../main/page.html'" src="../assets/arrow-right.png" alt="arrow-bar-right">
+      <img class="arrow_right" onclick="window.location.href='../main/page.html'" src="../assets/arrow-right.png" alt="arrow-bar-right">
     </div>    
 
     <div>
       <div class="mb-3">
-        <input type="name" class="form-control" id="name" placeholder="Your name">
+        <input type="name" class="form-control" id="name" placeholder="Your name" autocomplete="on">
       </div>
     </div>
-    <button onclick="conn()" type="button" class="btn btn-outline-light">Start</button>
+    <button onclick="start()" type="button" class="btn btn-outline-light">Start</button>
     <div id="err">
       <h2>Insert your name.</h2>
     </div>
-    <div id="selects-div">
-      <div class="head-select">
+    <div id="selects_div">
+      <div class="head_select">
         <h2>Hey <span id="print-name"></span>, let's start your order.</h2>
         <h3>Choose your meal</h3>
       </div>
       <div class="selects">
         <div>
           <h5>Classics</h5>
-          <select class="form-select" aria-label="Default select example">
+          <select id="select_classic" class="form-select" aria-label="Default select example">
             <option selected>Select</option>
-            <option value="1">Avocado Toast</option>
-            <option value="2">Sandwich</option>
-            <option value="3">Egg Toast</option>
+            <option value="Avocado Toast">Avocado Toast</option>
+            <option value="Sandwich">Sandwich</option>
+            <option value="Egg Toast">Egg Toast</option>
           </select>      
         </div>
         <div>
           <h5>Drinks</h5>
-          <select class="form-select" aria-label="Default select example">
+          <select id="select_drink" class="form-select" aria-label="Default select example">
             <option selected>Select</option>
-            <option value="1">Tea</option>
-            <option value="2">Latte</option>
-            <option value="3">Iced Coffee</option>
+            <option value="Tea">Tea</option>
+            <option value="Latte">Latte</option>
+            <option value="Iced Coffee">Iced Coffee</option>
           </select>      
         </div>
         <div>
-          <h5>Dessests</h5>
-          <select class="form-select" aria-label="Default select example">
+          <h5>Desserts</h5>
+          <select id="select_dessert" class="form-select" aria-label="Default select example">
             <option selected>Select</option>
-            <option value="1">Pancake</option>
-            <option value="2">Vegan Yogurt</option>
-            <option value="3">Chocolate Cheesecake</option>
+            <option value="Pancake">Pancake</option>
+            <option value="Vegan Yogurt">Vegan Yogurt</option>
+            <option value="Chocolate Cheesecake">Chocolate Cheesecake</option>
           </select>      
         </div>
       </div>    
-      <div class="btn-selects">
-        <button onclick="finish()" type="button" class="btn btn-outline-success">Make Order</button>
+      <div class="btn_selects">
+        <button onclick="order()" type="button" class="btn btn-outline-success">Make Order</button>
         <button onclick="clear()" type="button" class="btn btn-outline-warning">Clear</button>
+      </div>     
+    </div>   
+    <div  class="head_end" id="head_end">
+      <h3>This is your order, <span id="print_name"></span>.</h3>
+    </div>
+    <div class="finish"  id="finish_div">          
+      <div class="name_meal">
+        <p>Classic</p>
+        <p>Drink</p>
+        <p>Dessert</p>
+      </div>   
+      <div class="print_meal">
+        <p> -- <span id="name_classic"></span> -- </p>
+        <p> -- <span id="name_drink"></span> -- </p>
+        <p> -- <span id="name_dessert"></span> -- </p>
+      </div>      
+      <div class="print_value">
+        <p><span id="value_classic"></span></p>
+        <p><span id="value_drink"></span></p>
+        <p><span id="value_dessert"></span></p>
       </div>  
+    </div>
+    <div class="total" id="total_div">
+      <span class="badge bg-light text-dark">Total: </span>
+      <span class="badge bg-dark" id="result"></span>
     </div>
 </body>
 </html>

@@ -24,13 +24,13 @@ h1,h2{
     gap: 4rem; 
 }
 
-.arrow-left{
+.arrow_left{
     width: 30px;
     height: auto;
     opacity: 0.8;
 }
 
-.arrow-left:hover{
+.arrow_left:hover{
     opacity: 1;
     transition: all 200ms linear;
     text-decoration: solid;
@@ -38,13 +38,13 @@ h1,h2{
     cursor: pointer;
 }
 
-.arrow-right{
+.arrow_right{
     width: 30px;
     height: auto;
     opacity: 0.8;
 }
 
-.arrow-right:hover{
+.arrow_right:hover{
     opacity: 1;
     transition: all 200ms linear;
     text-decoration: solid;

@@ -4,12 +4,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
+   
     gap: 2vh;
 }
 
 h1,h2{
     color: #fdfaf0;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     text-shadow: 0px 3px  rgba(0, 0, 0, 0.24);
 }
 h3,h5{
@@ -17,58 +19,67 @@ h3,h5{
     text-shadow: 0px 3px  rgba(0, 0, 0, 0.24);
 }
 
+p{    
+    color: #fdfaf0;
+}
 .group{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem;   
-    gap: 4rem; 
+    padding: 1em;   
+    gap: 2em; 
+   
 }
 
-.arrow-left{
+.arrow_left{
     width: 30px;
     height: auto;
     opacity: 0.8;
 }
 
-.arrow-left:hover{
+.arrow_left:hover{
     opacity: 1;
     transition: all 200ms linear;
     text-decoration: solid;
     transform: scale(1.5);
     cursor: pointer;
 }
-.arrow-right{
+.arrow_right{
     width: 30px;
     height: auto;
     opacity: 0.8;
 }
 
-.arrow-right:hover{
+.arrow_right:hover{
     opacity: 1;
     transition: all 200ms linear;
     text-decoration: solid;
     transform: scale(1.5);
     cursor: pointer;
 }
-
-#selects-div{
+#selects_div{
     display: none;
-}
-#err{
-    display: none;
-}
-.head-select{
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem;   
-    gap: 4rem; 
-
+   
+}
+#err{
+    display: none;
+}
+.head_select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1em;   
+    gap: 2em; 
+   
 }
 .selects{
     display: flex;
@@ -76,18 +87,69 @@ h3,h5{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem;   
-    gap: 4rem; 
+    padding: 1em;   
+    gap: 2em; 
+   
 }
 .form-select{
     width: 250px;
 }
-.btn-selects{
+.btn_selects{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem;   
-    gap: 4rem; 
+    padding: 1em;   
+    gap: 2em; 
+}
+
+.head_end{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1em;   
+    gap: 2em; 
+}
+.finish{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;   
+    gap: 2em; 
+}
+.name_meal{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.print_meal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.print_value{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.total{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em; 
+    gap: 2em; 
+}
+.badge{
+    font-size: 1em;
 }

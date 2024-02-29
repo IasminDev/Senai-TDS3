@@ -34,8 +34,13 @@ function send(){
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
         var phone = "5541999999999";
-        var link = "https://wa.me/" + phone + "?text=Name: " + global_name + '<br>' +"Email: " + global_email + '<br>' + global_message;
-        window.open(link, "_blank");
+        if(global_email == ""){
+            var link = "https://wa.me/" + phone + "?text=Name: " + global_name +". " + global_message;
+            window.open(link, "_blank");
+        }else{
+            var link = "https://wa.me/" + phone + "?text=Name: " + global_name +". Email: " + global_email + " - " + global_message;
+            window.open(link, "_blank");
+        }
     }else{
         document.getElementById("check_name").textContent = "";
         document.getElementById("check_email").textContent = "";

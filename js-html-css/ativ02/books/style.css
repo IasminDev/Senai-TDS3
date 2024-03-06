@@ -39,3 +39,11 @@ body{
     transition: all 200ms linear;
     cursor: pointer;
 }
+.wrap_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    gap: 2em;
+}

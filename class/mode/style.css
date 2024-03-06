@@ -1,0 +1,16 @@
+body{
+    padding: 2em;
+}
+
+.form-check-input{
+    transform: scale(1.5) !important;
+    margin-right: 2em;
+}
+
+.light{
+    background-color: #fdfaf0;
+}
+
+html{
+    background-color: #212121;
+}

@@ -1,14 +1,16 @@
-html{
-    background-color: #fdfaf0;
-    color: #212121;
-}
 body{
-    overflow: hidden;
-    height: 100vh;
-}
-.dark{    
     background-color: #212121;
+    overflow-x: hidden;
+}
+h1{
     color: #fdfaf0;
+    font-size: 2.5rem;
+    text-shadow: 0px 3px  rgba(0, 0, 0, 0.24);
+}
+h5{
+    color: #212121;
+    font-size: 1.3em;
+    text-shadow: 0px 3px  rgba(0, 0, 0, 0.24);
 }
 .wrap-main{
     display: flex;
@@ -16,8 +18,20 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2em;
+    padding-bottom: 2em;
     gap: 2em;
+}
+.wrap-mode{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+.change_mode{
+    width: 50px;
 }
 .left{
     width: 40px;
@@ -44,6 +58,25 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
     padding: 2em;
     gap: 2em;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;    
+}
+.card{
+    width: 18rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-img-top{
+    align-items: center;
+    padding: 1rem;
+    width: 18rem;
+    height: auto;
 }

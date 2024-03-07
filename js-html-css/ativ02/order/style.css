@@ -1,14 +1,17 @@
-html{
-    background-color: #fdfaf0;
-    color: #212121;
-}
 body{
-    overflow: hidden;
-    height: 100vh;
-}
-.dark{    
     background-color: #212121;
     color: #fdfaf0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+h1,h2{
+    font-size: 2.5em;
+    text-shadow: 0px 3px  rgba(0, 0, 0, 0.24);
+}
+h3,h5{
+    text-shadow: 0px 3px  rgba(0, 0, 0, 0.24);
 }
 .wrap-main{
     display: flex;
@@ -16,8 +19,20 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2em;
+    padding-bottom: 2em;
     gap: 2em;
+}
+.wrap-mode{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+.change_mode{
+    width: 50px;
 }
 .left{
     width: 40px;
@@ -38,4 +53,82 @@ body{
     transform: scale(1.5);
     transition: all 200ms linear;
     cursor: pointer;
+}
+#initial_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#selects_div{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;   
+}
+#err{
+    display: none;
+}
+.head_select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1em;   
+    gap: 2em; 
+   
+}
+.selects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;   
+    gap: 2em; 
+   
+}
+.form-select{
+    width: 250px;
+}
+.btn_selects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;   
+    gap: 2em; 
+}
+
+.head_end{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1em;   
+    gap: 2em; 
+}
+.finish{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 3em;   
+}
+.book_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    gap: 2em; 
+    color: #fdfaf0;
 }

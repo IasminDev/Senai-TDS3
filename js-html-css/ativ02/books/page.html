@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
@@ -8,42 +10,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrap-main">
-        <img class="left" onclick="window.location.href='../main/page.html'" src="../assets/arrow-left.png" alt="arrow-left">
-        <h1 class="font-color">Books</h1>
-        <img class="right" onclick="window.location.href='../order/page.html'" src="../assets/arrow-right.png" alt="arrow-right">
-    </div>
+  <div class="wrap-mode">
+      <img class="change_mode" src="../assets/moon.png" alt="change-mode">
+  </div>
+  <div class="wrap-main">
+      <img class="left" onclick="window.location.href='../main/page.html'" src="../assets/arrow-left.png" alt="arrow-left">
+      <h1 class="font-color">Books</h1>
+      <img class="right" onclick="window.location.href='../order/page.html'" src="../assets/arrow-right.png" alt="arrow-right">
+  </div>
+    
+  <div class="cards">
     <div class="wrap_card">
         <div class="card">
             <img src="../assets/casmurro.png" class="card-img-top" alt="casmurro">
             <div class="card-body">
               <h5 class="card-title">Casmurro</h5>
-              <p class="card-text">R$ 16,90</p>
+              <p class="card-text">R$ 36,90</p>
             </div>
         </div>
         <div class="card">
-          <img src="../assets/hobbit" class="card-img-top" alt="hobbit">
+          <img src="../assets/hobbit.png" class="card-img-top" alt="hobbit">
           <div class="card-body">
             <h5 class="card-title">O Hobbit</h5>
-            <p class="card-text">R$ 14,90</p>
+            <p class="card-text">R$ 54,90</p>
           </div>
         </div>
+      </div>
+
+      <div class="wrap_card">
         <div class="card">
           <img src="../assets/lolita.png" class="card-img-top" alt="lolita">
           <div class="card-body">
             <h5 class="card-title">Lolita</h5>
-            <p class="card-text">R$ 18,90</p>
+            <p class="card-text">R$ 78,90</p>
           </div>
         </div>
         <div class="card">
             <img src="../assets/orgulho.png" class="card-img-top" alt="orgulho-e-preconceito">
             <div class="card-body">
               <h5 class="card-title">Orgulho e Preconceito</h5>
-              <p class="card-text">R$ 16,90</p>
+              <p class="card-text">R$ 26,30</p>
             </div>
         </div>
+      </div>
+
+      <div class="wrap_card">
         <div class="card">
-            <img src="../assets/prinpipe.png" class="card-img-top" alt="pequeno-principe">
+            <img src="../assets/principe.png" class="card-img-top" alt="pequeno-principe">
             <div class="card-body">
               <h5 class="card-title">O Pequeno Principe</h5>
               <p class="card-text">R$ 16,90</p>
@@ -52,10 +65,11 @@
         <div class="card">
             <img src="../assets/wood.png" class="card-img-top" alt="wood">
             <div class="card-body">
-              <h5 class="card-title">N Wood</h5>
-              <p class="card-text">R$ 16,90</p>
+              <h5 class="card-title">Norwegian Wood</h5>
+              <p class="card-text">R$ 83,90</p>
             </div>
         </div>
       </div>
+    </div>
 </body>
 </html>
